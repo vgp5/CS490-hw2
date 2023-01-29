@@ -8,6 +8,9 @@ const BlogLayout = ({ children }) => {
         <li>
           <Link to={routes.about()}>About</Link>
         </li>
+        <li>
+          <Link to={routes.contact()}>Contact Me</Link>
+        </li>
 
       </ul>
     </nav>
