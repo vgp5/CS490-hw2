@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
       <MetaTags title="Home" description="Home page" />
-      <p>Welcome!</p>
+      <h2>Welcome!</h2>
       <>
         <ArticlesCell />
       </>
