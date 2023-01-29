@@ -13,8 +13,11 @@ const BlogLayout = ({ children }) => {
           </h1>
           {isAuthenticated ? (
             <div>
-
-
+              <span> Logged in as {currentUser.email}</span>{' '}
+              <br></br><br></br>
+              <button type="button" onClick={logOut}>
+                Logout
+              </button>
             </div>
           ) : (
             <Link to={routes.login()}>Login</Link>
@@ -32,10 +35,7 @@ const BlogLayout = ({ children }) => {
               <Link to={routes.contact()}>Contact</Link>
 
             </li>
-           <br></br><br></br>
-           <button type="button" onClick={logOut}>
-                Logout
-              </button>
+
           </ul>
         </nav>
       </header>
