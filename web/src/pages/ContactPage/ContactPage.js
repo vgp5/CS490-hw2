@@ -39,6 +39,7 @@ const ContactPage = () => {
       <h1>Contact Me!</h1>
       <br></br><br></br>
       <Toaster />
+      <div>
       <Form
         onSubmit={onSubmit}
         config={{ mode: 'onBlur' }}
@@ -82,9 +83,10 @@ const ContactPage = () => {
           errorClassName="error"
         />
         <FieldError name="message" className="error" />
-
+        <br></br><br></br>
         <Submit disabled={loading}>Send Message</Submit>
       </Form>
+      </div>
     </>
   )
 }
